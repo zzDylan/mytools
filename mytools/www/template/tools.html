@@ -1,0 +1,13 @@
+<ion-view class="calm-bg">
+    <ion-header-bar align-title="center" class="bar-balanced">
+        <p class="title">请选择运营商</p>
+    </ion-header-bar>
+    <ion-content>
+        <ion-radio ng-model="user.choice" ng-value="'A'"  style="text-align: center">电信</ion-radio>
+        <ion-radio ng-model="user.choice" ng-value="'B'"  style="text-align: center">移动</ion-radio>
+        <ion-radio ng-model="user.choice" ng-value="'C'"  style="text-align: center">联通</ion-radio>
+        <button class="button button-positive button-block" ng-click="setStorage()" >确定</button>
+    </ion-content>
+        
+
+</ion-view>

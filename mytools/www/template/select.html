@@ -1,0 +1,11 @@
+<ion-view class="calm-bg">
+    <ion-header-bar align-title="center" class="bar-energized">
+        <i class="icon ion-chevron-left" ui-sref="tools" style="font-size: 18px">后退</i>
+         <p class="title">({{user.choice}})请选择查询类型</p>
+    </ion-header-bar>
+    <ion-content>
+        <ion-radio ng-model='user.select' ng-value="'a'"  style="text-align: center">查询话费</ion-radio>
+        <ion-radio ng-model='user.select' ng-value="'b'"  style="text-align: center">查询流量</ion-radio>
+        <button class='button button-positive button-block' ng-click="sendSms()">确定</button>
+    </ion-content>
+</ion-view>
